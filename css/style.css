@@ -10,14 +10,20 @@ h1,h2,h3,h4,h5,h6{
     font-family: 'Roboto', sans-serif;
 
 }
+a{
+    text-decoration: none;
+}
+ol,ul{
+    list-style-type: none;
+}
 p{
-    font-size: 18px;
+    font-size: 14px;
     font-weight: normal;
 
 }
 
 .hr-style{
-    border: 5px dotted #4267B2;
+    border: 5px dotted red;
     border-bottom: none;
     width: 50px;
 }
@@ -26,9 +32,11 @@ p{
     border-bottom: none;
     width: 50px;
 }
+/* common css */
+
 
 header{
-    background-image: url(../img/IMG-20191027-WA0134.jpg);
+    background-image: url(../img/pexels-cottonbro-6153354.jpg);
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -47,15 +55,15 @@ header{
 }
 .navbar{
     padding: 1% 10%;
-    background-color: #3763bb;
+    background-color: #C0C0C0;
     
     
 }
 .navbar-icon{
-    color: white;
+    color: red;
 }
 .nav-link{
-    color: white;
+    color: black;
     margin: 10px;
     border-radius: 5px;
     transition: .4s;
@@ -64,18 +72,19 @@ header{
    background:#898F9C;
    color: #fff;
    transform: scale(1.1);
+   border-bottom: 1px solid red;
 }
 .banner-container{
-    height: 100vh;
+    height: 70vh;
+    margin-top: 150px;
     
     
 }
 .banner-container h1{
-    font-size: 2.5rem;
-    padding-top: 10px ;
+    font-size: 2.4rem;
     padding-left: 5px;
     padding-right: 20px;
-    padding-top: 100px;
+    padding-top: 0px;
      
     
 }
@@ -88,241 +97,257 @@ header{
     
     
 }
+.name h1{
+    color: red;
+}
+.name a{
+    color: red;
+    font-size: 10px;
+}
+.banner-container span{
+    font-size: 2.4rem;
+    color: red;
+
+}
 .banner-container .btn{
     margin-left: 50px;
+    background-color: red;
+    
+
+}
+.banner-container .btn:hover{
+    background-color: rgb(167, 26, 26);
+    
+    
 
 }
 /* header end */
-#about_us{
-    padding: 1% 8.8%;
 
- }
-.section-title h3 span{
-    color: #4267B2;
-}
-.about-img img{
-    border: 5px solid white;
-    border-radius: 50%;
-    height: 220px;
-    width: 200px;
-}
-.about-img img:hover{
-    box-shadow: 0 4px 8px 10px black;
-}
-/* skill part */
-#skill{
-    padding: 1% 8.8%;
-   background-color: #4267B2;
-}
-.special_one{
-    border: 1px solid orange;
-    border-radius: 5px;
-    padding: 15px;
-    margin: 20px 0;
-    transition: .4s;
-}
+/* technology part */
 
-
-.experince{
-    padding: 1% 7%;
-    padding-right: 5px;
-}
-
-.card{
-    background-color: #a39e9e;
-    border-radius: 10px;
-    padding: 10px;
-    transition: .03s;
-    height: 700px;
+.card-description{
     width: 100%;
-}
-.card:hover{
-    box-shadow: 0 4px 8px 20px black;
-}
-.card-icon{
-    text-align: center;
-}
-.card-icon img{
-    margin-top: 10px;
-    width: 100px;
-}
-.rounded-img{
-    border: 5px solid white;
-    border-radius: 50%;
-    padding: 15px;
-}
-.card-title h2{
-    background-color: #616161;
-    color: white;
-    padding: 10px;
-    text-align: center;
-}
-.container{
-    padding-right: 45px;
-}
-.container li{
-    list-style: none;
-    font-weight:bolder;
-    margin: 20px 10px;
-    position: relative;
-    text-transform: uppercase;
-}
-.container li::before{
-    content: '';
-    position:absolute;
-    width: 100%;
-    height: 10px;
-    background-color: rgb(86,86,153,.5);
-    top: calc(100% + 5px);
-    left: 0;
-    border-radius: 1000px;
-}
-.container li::after{
-    content: '';
-    position:absolute;
-    width: 0;
-    height: 10px;
-    background-color: rgb(86,86,153,1);
-    top: calc(100% + 5px);
-    left: 0;
-    border-radius: 1000px;
-
-    animation-duration: 3s;
-    animation-delay: 2s;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-}
-.html::after{
-    animation-name: html;
-}
-@keyframes html{
-    to{
-        width: 85%;
-    }
-}
-.css::after{
-    animation-name: css;
-}
-@keyframes css{
-    to{
-        width: 90%;
-    }
-}
-.bootstrap::after{
-    animation-name: bootstrap;
-}
-@keyframes bootstrap{
-    to{
-        width: 80%;
-    }
-}
-.wordPress::after{
-    animation-name: wordPress;
-}
-@keyframes wordPress{
-    to{
-        width: 90%;
-    }
-}
-.js::after{
-    animation-name: js;
-}
-@keyframes js{
-    to{
-        width: 60%;
-    }
-}
-.react::after{
-    animation-name: react;
-}
-@keyframes react{
-    to{
-        width: 50%;
-    }
-}
-.psd::after{
-    animation-name: psd;
-}
-@keyframes psd{
-    to{
-        width: 80%;
-    }
-}
-.ms::after{
-    animation-name: ms;
-}
-@keyframes ms{
-    to{
-        width: 80%;
-    }
-}
-.figma::after{
-    animation-name: figma;
-}
-@keyframes figma{
-    to{
-        width: 70%;
-    }
-}
-.sass::after{
-    animation-name: sass;
-}
-@keyframes sass{
-    to{
-        width: 60%;
-    }
-}
-/* contact */
-.contact{
-    background-image: url(../img/IMG-20181212-WA0004.jpg);
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-}
-.overly{
-    width: 100%;
-    height: 100%;
-    background: #000;
-    opacity: .9;
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+  
 
 }
-.contact p{
-    text-align: center;
+.card-description a{
+    text-decoration: none;
+    color: #000;
+}
+.html i:hover{
+    color: rgb(238, 80, 7);
+   
+}
+.css i:hover{
     color: blue;
+   
 }
-.contact a{
-    font-size: 1.2rem;
+.bootstrap i:hover{
+    color: purple;
+   
 }
-
-
-
-.box{
-    padding: 2% 7%;
-    background-color: rgb(245, 236, 236);
-    color: white;
-    text-align: center;
+.meta i:hover{
+    color: rgb(224, 13, 66);
+   
 }
-
-.box button{
-    border: none;
-    border-radius: 12px;
-    color: white;
-    background-color: #fff;
-    cursor: pointer;
-    padding: 15px;
-    margin: 10px;
-    width: 100px;
+.sass i:hover{
+    color: rgb(247, 71, 100);
+   
 }
-.box::after{
-    display: table;
-    clear: both;
-    content: '';
+.wp i:hover{
+    color: rgb(12, 141, 184);
+   
+}
+.figma i:hover{
+    color: rgb(224, 210, 13);
+   
+}
+.git i:hover{
+    color: rgb(233, 48, 23);
+   
+}
+.js i:hover{
+    color: yellow;
+   
+}
+/* project */
+
+.portfolio_item_part{
+    position: relative;
     
 }
-/* contact end */
+.portfolio_item_part img{
+    width: 100%;
+}
+.portfolio_item_part_overly{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: rgba(2, 2, 2, 0.911);
+  transition: all linear .4s;
+}
+.portfolio_item_part_overly h3{
+    color: #ffffff;
+    font-size: 16px;
+   font-weight: 700;
+   font-family: 'Raleway', sans-serif;
+   padding: 30px 20px 15px 20px;
+   opacity: 0;
+    visibility: hidden;
+    transition: all linear .4s;
+}
+.portfolio_item_part_overly p{
+    color: #959595;
+    font-size: 14px;
+   font-weight: 400;
+   font-family: 'Raleway', sans-serif;
+   padding: 0px 20px;
+   opacity: 0;
+    visibility: hidden;
+    transition: all linear .4s;
+    position: absolute;
+   
+}
+.portfolio_item_part_overly p::before{
+   position: absolute;
+   content: '';
+   width: 70px;
+   height: 2px;
+   background: #e5493a;
+   left: 20px;
+   top: 30px;
+   transition: all linear .4s;
+   opacity: 0;
+   visibility: hidden;
+}
+
+.portfolio_item_part:hover .portfolio_item_part_overly{
+    height: 100%;
+}
+.ccirle{
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+    background: #252525;
+    border-radius: 50px;
+    position: absolute;
+    right: 50px;
+    bottom: 10px;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all linear .4s;
+    
+}
+.portfolio_item_part:hover .ccirle{
+    opacity: 1;
+    visibility: visible;
+}
+
+.ccirle button{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    position: absolute;
+    
+}
+.ccirle button:hover{
+    color: #e5493a;
+    
+    
+}
+.ccirle a i{
+    font-size: 14px;
+    color: #fff;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    position: absolute;
+}
+/* ... */
+.ccle{
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+    background: #252525;
+    border-radius: 50px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all linear .4s;
+    
+}
+.portfolio_item_part:hover .ccle{
+    opacity: 1;
+    visibility: visible;
+    color:blue;
+    
+}
+.portfolio_item_part:hover .ccle{
+    color: #e5493a;
+    
+}
+.portfolio_item_part:hover .portfolio_item_part_overly p::before{
+    opacity: 1;
+    visibility: visible;
+    
+}
+.portfolio_item_part:hover h3{
+    opacity: 1;
+    visibility: visible;
+}
+.portfolio_item_part:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+.ccle a{
+    display: inline-block;
+    
+}
+.ccle a i{
+    font-size: 14px;
+    color: #fff;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    position: absolute;
+}
+
+
+.portfolio_btn a{
+    display: inline-block;
+    text-decoration: none;
+    width: 170px;
+    border-radius: 5px;
+    background: #363636;
+    color: #ffffff;
+    font-size: 14px;
+   font-weight: 400;
+   border: 2px solid #363636;
+    line-height: 50px;
+    transition: all linear .4s;
+    margin: 0px 10px;
+    margin-top: 40px;
+}
+.portfolio_btn a:hover{
+    background: #e5493a;
+    border: 2px solid #e5493a;
+}
+/* project end */
 /* footer part */
 footer{
     padding: 1% 10%;
@@ -332,10 +357,11 @@ footer a{
     color: white;
     margin: 0 7px;
     text-decoration: none;
+    
 
 }
 footer a:hover{
-    color: orange;
+    color: red;
 }
 
 /* footer part end */
