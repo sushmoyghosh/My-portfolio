@@ -207,6 +207,7 @@ ul{
 .aside .logo a span{
     font-family: 'Clicker Script', cursive;
     font-size: 40px;
+    color:var(--skin-color);
     
 }
 .aside .logo a::before{
@@ -323,7 +324,6 @@ h3.hello{
     margin: 15px 0;
 }
 h3.hello span{
-    font-family: 'Clicker Script', cursive;
     font-size: 30px;
     font-weight: 700;
     color: var(--skin-color);
@@ -804,6 +804,14 @@ h3.my-profession{
     border: 2px solid  var(--skin-color);
     color: #fff;
 }
+.vistMore{
+    margin-top: 8px;
+    margin-left: 20px;
+}
+.vistMore .ccle a i{
+   font-size: 30px;
+
+}
 /* portfolio Section */
 /* contact Section */
 .contact-title{
@@ -929,10 +937,23 @@ h3.my-profession{
         max-width: 100%;
     }
     .home .home-img{
+       margin-top: 100px;
+    }
+}
+@media (max-width:900px){
+    .home .home-img{
+        margin-top: 100px;
+        border: 2px solid var(--skin-color);
+        
+     }
+     
+     .home-img::after{
+        display: none;
+    }
+    .home-img::before{
         display: none;
     }
 }
-
 @media (max-width:767px){
     .contact .contact-from .col-6,
     .contact .contact-info-item,
@@ -945,6 +966,21 @@ h3.my-profession{
     .home .home-info{
         flex: 0 0 100%;
         min-width: 100%;
+    }
+    .home .home-img{
+        margin-top: 100px;
+     }
+     .home-img::after{
+        display: none;
+    }
+    .home-img::before{
+        display: none;
+    }
+}
+@media (max-width:400px){
+    .container .btn{
+        margin-bottom: 20px;
+
     }
 }
 /* responsive Section */
