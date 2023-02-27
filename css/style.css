@@ -619,6 +619,10 @@ h3.my-profession{
     color: var(--text-back-900);
     font-weight: 500;
 }
+.portfolio .portfolio-heading h2 span{
+    color: var(--skin-color);
+    font-weight: bold;
+}
 .portfolio .portfolio-item{
     flex: 0 0 33.33%;
     max-width: 33.33%;
